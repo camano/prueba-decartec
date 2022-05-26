@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pruebadecartec
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+  jpa:
+    database: POSTGRESQL
+    show-sql : true
+    hibernate:
+      ddl-auto: update
+
+app:
+  access_key: cfecd68018d2e636348daf7ef9510596
