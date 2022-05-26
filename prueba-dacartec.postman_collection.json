@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "530b0fb6-38fe-48d6-b336-3a5770526629",
+		"name": "prueba-dacartec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14483371"
+	},
+	"item": [
+		{
+			"name": "Api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.ipapi.com/45.238.183.3?access_key=cfecd68018d2e636348daf7ef9510596",
+					"protocol": "http",
+					"host": [
+						"api",
+						"ipapi",
+						"com"
+					],
+					"path": [
+						"45.238.183.3"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "cfecd68018d2e636348daf7ef9510596"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "regitro/ip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ip\":\"45.238.183.03\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/pais/registro/ip",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"pais",
+						"registro",
+						"ip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPaises",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/pais/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"pais",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultarNombrePais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/pais/consulta/madrid",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"pais",
+						"consulta",
+						"madrid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
